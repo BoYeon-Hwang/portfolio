@@ -1,0 +1,26 @@
+header {
+    padding-bottom: 4px;
+    border-bottom: 4px solid #ddd;
+    margin-bottom: 1em;
+}
+
+article {
+      width: 100%;
+      padding: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    article {
+      width: calc((100% - 2*30px)/3);
+      padding: 0;
+      
+      display: inline-flex;
+      margin-right: 10px;
+    }
+    article:first-of-type {
+      margin-left: 15px;
+    }
+    article:last-of-type {
+      margin-right: 0;
+    }
+}

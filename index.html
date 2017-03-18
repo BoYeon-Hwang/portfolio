@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>My Portfolio</title>
+    <link rel="icon" href="images/H.png">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
+  </head>
+  
+  <body>
+    <div class="container">
+       <header class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><img class="img-responsive" src="images/H.png" width="115"></div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+          <h1>BoYeon Hwang</h1>
+          <h3>Front-end Ninja</h3>
+        </div>
+      </header>
+
+      <section class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <!--src: http://placekitten.com/3420/1050-->
+          <picture>
+            <source 
+              sizes="calc(100vw - 30px)"
+              srcset="images/cat-img-2280.jpg 2280w, 
+                      images/cat-img-1140.jpg 1140w,
+                      images/cat-img-570.jpg 570w">
+            <img  class="img-responsive"
+              src="images/cat-img-1140.jpg" alt="Cat Image">
+          </picture>
+        </div>
+      </section>
+      
+      <section class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h2>Featured Work</h2>
+        </div>
+        
+        <article>
+            <figure>
+            <picture>
+              <source 
+                sizes= "(min-width: 768px) calc((100vw - 2*30px)/3), 100vw"
+                srcset="images/still_life-large.jpg 800w, 
+                        images/still_life-large_x2.jpg 1600w, 
+                        images/still_life-medium.jpg 500w, 
+                        images/still_life-medium_x2.jpg 1000w">
+              <img class="img-responsive"
+                src="images/still_life-large_x2.jpg" 
+                alt="flowers and fruits on a table">
+            </picture>
+            <figcaption>
+                <h3>Appify</h3>
+                <h5>http://github/BoYeon-Hwang/Appify</h5>
+            </figcaption>
+            </figure>
+        </article>
+        
+        <article>
+            <figure>
+            <picture>
+              <source 
+                sizes= "(min-width: 768px) calc((100vw - 2*30px)/3), 100vw"
+                srcset="images/volt-large.jpg 800w, 
+                        images/volt-large_x2.jpg 1600w, 
+                        images/volt-medium.jpg 500w, 
+                        images/volt-medium_x2.jpg 1000w">
+              <img class="img-responsive"
+                src="images/volt-large_x2.jpg" 
+                alt="Sign in an old Berlin power station">
+            </picture>
+            <figcaption>
+                <h3>Sunflower</h3>
+                <h5>http://github/BoYeon-Hwang/</h5>
+            </figcaption>
+            </figure>
+        </article>
+        
+        <article>
+            <figure>
+            <picture>
+              <source 
+                sizes= "(min-width: 768px) calc((100vw - 2*30px)/3), 100vw"
+                srcset="images/sfo-large.jpg 800w, 
+                        images/sfo-large_x2.jpg 1600w, 
+                        images/sfo-medium.jpg 500w, 
+                        images/sfo-medium_x2.jpg 1000w">
+              <img class="img-responsive"
+                src="images/sfo-large_x2.jpg" 
+                alt="image of sfo">
+            </picture>
+            <figcaption>
+                <h3>Bokeh</h3>
+                <h5>http://github/BoYeon-Hwang/</h5>
+            </figcaption>
+            </figure>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>
